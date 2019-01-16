@@ -1,0 +1,21 @@
+{
+  "name": "cents",
+  "version": "0.0.1",
+  "description": "Money math in cents",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "scripts": {
+    "build": "yarn build:es && yarn build:cjs",
+    "build:es": "NODE_ENV=es rollup -c",
+    "build:cjs": "NODE_ENV=cjs rollup -c"
+  },
+  "devDependencies": {
+    "rollup": "^1.1.0",
+    "rollup-plugin-filesize": "^6.0.0"
+  }
+}
